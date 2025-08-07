@@ -1,0 +1,3 @@
+{
+    "start_message": "Hi! The bot allows to make custom filters to automate filtering in the supergroups! It will automatically forward messages to appropriate topics from general chat and delete them from general. It allows filtration by sender, or by forwarded from channel, regexp, link, simple string. To be able to use it, just add it into a super group!"
+}

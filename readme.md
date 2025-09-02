@@ -44,7 +44,7 @@ SuperGroupFilterBot is a Telegram bot that filters messages in supergroups based
 3. Configure the bot:
 
    - Create a new bot on Telegram and get the API token.
-   - Rename `config.example.py` to `config.py` and add your API token.
+   - Rename `.env.example` to `.env` and specify your parameters there.
 
 4. Run the bot:
 

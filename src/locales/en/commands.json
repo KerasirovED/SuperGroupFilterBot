@@ -1,3 +1,3 @@
 {
-    "start_message": "Hi there! 👋\n\n🤖 I will help you to do some custom autimating filtering in you supergroup!\n\n😋 I will automatically forward messages to appropriate topics from the general chat and delete them afteward.\n\nI undestand filters by:\n🧑 sender\n📰 forwarded-from channel\n#️⃣ regexp\n🌐 link\n🅰️ simple string\n\nJust add it in your super group! 👇"
+    "start_message": "Hi there! 👋\n\n🤖 I will help you to do some custom automating filtering in you supergroup!\n\n😋 I will automatically forward messages to appropriate topics from the general chat and delete them afteward.\n\nI undestand filters by:\n🧑 sender\n📰 forwarded-from channel\n#️⃣ regexp\n🌐 link\n🅰️ simple string\n\nJust add it in your super group! 👇"
 }

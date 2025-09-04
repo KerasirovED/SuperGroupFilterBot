@@ -8,6 +8,9 @@ SuperGroupFilterBot is a Telegram bot that filters messages in supergroups based
   - Currently supports English and Russian.
 
 ## TODO
+- [ ] Support two modes:
+  - [ ] Webhook mode for AWS Lambda.
+  - [x] Polling mode for local development.
 - [ ] Host it to AWS Lambda.
     - [ ] Create two functions:
         - [ ] Production function

@@ -8,7 +8,7 @@
     "prebuild": "npm run clean",
     "build": "tsc && copyfiles -u 1 \"src/**/*.json\" dist/",
     "prestart": "npm run build",
-    "start": "node dist/bot.js",
+    "start": "node dist/polling.js",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

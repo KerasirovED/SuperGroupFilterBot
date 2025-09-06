@@ -37,6 +37,25 @@ SuperGroupFilterBot is a Telegram bot that filters messages in supergroups based
 
 - `/start` - get a welcome message
 
+## Development flow
+
+- I use feature branch for development and `main` branch for production.
+- Once a new functionality is implemented, I test it locally first. I have a separate bot and a test supergroup for that. It works in polling mode.
+- Once everything is fine, I push the changes to a feature branch, the code automatically gets pushed to AWS Lambda (dev function) and I test it in the test supergroup again.
+- Once everything is fine, I create a PR to `main` branch. Once the PR is approved and merged, the code automatically gets pushed to AWS Lambda (production function) and the bot starts working in the production supergroup.
+- I use GitHub Actions for CI/CD. The workflow is defined in `.github/workflows/deploy-lambda.yml`.
+
+The bots:
+- Production bot: [@SuperGroupFilterBot](https://t.me/SuperGroupFilterBot)
+- Development bot: [@SuperGroupFilterDevBot](https://t.me/SuperGroupFilterDevBot)
+- Local bot: [@SuperGroupFilterLocalBot](https://t.me/SuperGroupFilterLocalBot)
+
+Two development bots are needed because the bot works in two modes:
+- Webhook mode for AWS Lambda (production and development bots).
+- Polling mode for local development (local bot).
+
+It is not convenient to switch between the modes, so I have two separate bots for that.
+
 ## TODO
 - [x] Support two modes:
   - [x] Webhook mode for AWS Lambda.

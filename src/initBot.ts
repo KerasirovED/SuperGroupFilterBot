@@ -35,5 +35,7 @@ export default async function initBot() {
     }
   });
 
+  await bot.init();
+
   return bot;
 }

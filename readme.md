@@ -56,6 +56,10 @@ Two development bots are needed because the bot works in two modes:
 
 It is not convenient to switch between the modes, so I have two separate bots for that.
 
+## License
+
+This project is licensed under the MIT License.
+
 ## TODO
 - [x] Support two modes:
   - [x] Webhook mode for AWS Lambda.
@@ -82,7 +86,3 @@ It is not convenient to switch between the modes, so I have two separate bots fo
     - [ ] Needs to store the rules somewhere. I think the DynamoDb is a good option. Anyway, it is going to be hosted in AWS Lambda.
 - [ ] Implement a command for listing rules `/listfilters`.
 - [ ] I want to create a mini app for managing rules in the future.
-
-## License
-
-This project is licensed under the MIT License.

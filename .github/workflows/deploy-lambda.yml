@@ -3,6 +3,8 @@ name: Deploy to AWS Lambda
 on:
   # Automatic triggers on branch pushes
   push:
+   paths-ignore:
+      - 'readme.md'
 
   # Manual trigger with environment selection
   workflow_dispatch:

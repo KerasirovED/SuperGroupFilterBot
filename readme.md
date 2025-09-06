@@ -60,11 +60,11 @@ It is not convenient to switch between the modes, so I have two separate bots fo
 - [x] Support two modes:
   - [x] Webhook mode for AWS Lambda.
   - [x] Polling mode for local development.
-- [ ] Host it to AWS Lambda.
-    - [ ] Create two functions:
-        - [ ] Production function
-        - [ ] Development function
-    - [ ] Set up autodeployment from `main` and `dev` branches.
+- [x] Host it to AWS Lambda.
+    - [x] Create two functions:
+        - [x] Production function
+        - [x] Development function
+    - [x] Set up autodeployment from `main` and `dev` branches.
 - [ ] Implement message forwarding rule based on sender.
     - [ ] The filtration is going to be implemented based on a user name first.
     - [ ] Needs to create an interface for managing the rules.

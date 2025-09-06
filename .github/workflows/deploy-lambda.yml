@@ -50,7 +50,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v5.0.0
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
-          aws-region: ${{ env.AWS_REGION }}
+          aws-region: ${{ vars.AWS_REGION }}
 
       # 6. Determine function name based on branch
       - name: Select Lambda function
@@ -67,9 +67,9 @@ jobs:
 
           # 2. Map branch to correct Lambda function name
           if [[ "$BRANCH" == "main" ]]; then
-            LAMBDA_FUNCTION="${{ secrets.LAMBDA_FUNCTION_NAME_MAIN }}"
+            LAMBDA_FUNCTION="${{ vars.LAMBDA_FUNCTION_NAME_MAIN }}"
           else
-            LAMBDA_FUNCTION="${{ secrets.LAMBDA_FUNCTION_NAME_DEV }}"
+            LAMBDA_FUNCTION="${{ vars.LAMBDA_FUNCTION_NAME_DEV }}"
           fi
 
           echo "Using Lambda function: $LAMBDA_FUNCTION"

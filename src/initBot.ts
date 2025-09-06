@@ -7,7 +7,7 @@ import { requestLoggingMiddlaware } from "./middlewares/requestLogging";
 import initializeI18n from "./i18n";
 import type {} from './types/context'
 
-async function main () {
+export default async function initBot() {
   const token = process.env.TOKEN;
 
   if (!token) {
@@ -35,9 +35,7 @@ async function main () {
     }
   });
 
-  bot.start();
+  await bot.init();
 
-  console.log("Bot is running...");
+  return bot;
 }
-
-main()
